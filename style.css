@@ -1,0 +1,136 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://www.bing.com/th?id=OIP.AYeHgvh-tUb_g-6XO8s4QwHaFr&w=127&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2");
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
+}
+.card {
+  transform-style: preserve-3d;
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 50%;
+  background: linear-gradient(to right, #4165a5, #c2c3c7);
+  box-shadow: 5px 10px 10px lightslategray;
+  padding: 50px 0px;
+  border-radius: 5px;
+}
+
+.imgOne,
+.imgTwo {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  transform: translateY(-60px);
+}
+.imgOne {
+  transform: rotateZ(45deg) translate(-60px, -90px);
+}
+.background {
+  background: linear-gradient(to right, #f56152, #2c5799);
+  width: 200px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: #d2d3d7;
+}
+h3 {
+  font-weight: lighter;
+  margin-bottom: 10px;
+  color: black;
+  font-style: italic;
+  height: 50px;
+}
+.SneakerButton button {
+  border: none;
+  padding: 10px;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: black;
+  border-radius: 2px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.SecondContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #f56152, #2c5799);
+}
+.secpage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.secPagebuttom button {
+  margin-bottom: 200px;
+  background-color: #5f9ea0;
+  font-style: italic;
+}
+.secpage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px #a15d70;
+}
+p {
+  width: 50%;
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+.imgThree {
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+.appear {
+  transform: translateY(-30px);
+  opacity: 1;
+}
+.selecter::after {
+  content: "";
+  border: 1.5px solid black;
+  position: absolute;
+  height: 35px;
+  width: 0px;
+  margin-left: 2px;
+  animation: blink 1s infinite ease-in-out;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
